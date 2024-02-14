@@ -1,0 +1,755 @@
+@font-face {
+    font-family: Barlow;
+    src: url(./Barlow/Barlow-Black.ttf);
+}
+@font-face {
+    font-family: Barlow2;
+    src: url(./Barlow/Barlow-Medium.ttf);
+}
+@font-face {
+    font-family: Fraunces;
+    src: url(./Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.body {
+    width: 100%;
+    height: 1500px;
+}
+.head{
+    background-color: rgb(48, 190, 255);
+    width: 100%;
+    height: 76.25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar{
+    width: 95%;
+    height: 50px;
+    background-color: rgb(48, 190, 255);
+    align-items: baseline;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile-nav{
+    display: none;
+}
+.menu {
+    display: none;
+}
+.sunny{
+    width: auto;
+}
+.name{
+    font-size: 24px;
+    color: white;
+    font-family: Barlow;
+}
+.list {
+    background-color: rgb(48, 190, 255);
+    width: 365px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+    align-items: center;
+    float: right;
+}
+.link{
+    color: white;
+    font-size: 15px;
+    font-family: Barlow2;
+    z-index: 2;
+}
+.contact{
+    background-color: white;
+    width: 5.5rem;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    border-radius: 1rem;
+    font-family: Fraunces;
+    font-weight: 700;
+}
+.contact:hover{
+    background-color: #ffffff53;
+    color: #fff;
+    cursor: pointer;
+}
+.cup {
+    height: 100%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.header {
+    color: white;
+    font-family: Fraunces;
+    letter-spacing: 9px;
+    font-weight: 900;
+    z-index: 2;
+    font-size: 45px;
+}
+#dropdown{
+    display: none;
+}
+.arrow{
+    z-index: 2;
+    margin-bottom: -65px;
+    padding-top: 80px;
+    height: 87px;
+}
+.orange{
+    width: 95%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.orangeImg{
+    width: 1000px;
+    height: 600px;
+    object-fit: cover;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    margin-top: -59px;
+}
+.container{
+    width: 100%;
+    height: 90rem;
+    background-color: lightcyan;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr  1fr;
+}
+.firstrow{
+    display: none;
+}
+.transform {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.sub{
+    width: 22rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+    z-index: 1;
+}
+.head1{
+    font-family: Fraunces;
+    color:hsl(212, 27%, 19%);
+    font-weight: 900;
+}
+.word1{
+    font-family: Barlow2;
+    color: hsl(213, 9%, 39%);
+    font-size: 13px;
+}
+.learn{
+    font-family: Fraunces;
+    color: hsl(212, 27%, 19%);
+    font-size: 12px;
+    font-weight: 800;
+}
+.under1{
+    background-color: rgb(255, 255, 186);
+    width: 92px;
+    height: 8px;
+    border-radius: 7px;
+    margin-top: -30px;
+    z-index: -1;
+}
+.under1:hover{
+    background-color: hsl(51, 100%, 49%);
+    cursor: pointer;
+}
+.egg{
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eggImg{
+    width: 100%;
+    height: 100%;
+}
+.glass{
+    background-color: none;
+}
+.glassImg{
+    width: 100%;
+    height: 100%;
+}
+.stand{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.head2{
+    font-family: Fraunces;
+    color:hsl(212, 27%, 19%);
+    font-weight: 900;
+}
+.word2{
+    font-family: Barlow2;
+    color: hsl(213, 9%, 39%);
+    font-size: 13px;
+}
+.under2{
+    background-color: rgb(255, 205, 205);
+    width: 92px;
+    height: 8px;
+    border-radius: 7px;
+    margin-top: -30px;
+    z-index: -1;
+}
+.under2:hover{
+    background-color: hsl(7, 99%, 70%);
+    cursor: pointer;
+}
+.sub{
+    width: 20rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+    z-index: 1;
+}
+.cherry{
+    background-color: rgb(0, 174, 116);
+    height: 31rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cherryImg{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+.graphic {
+    width: 350px;
+    height: 300px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: -150px;
+    align-items: center;
+    gap: 20px;
+}
+.graphichead {
+    font-family: Fraunces;
+    color: hsl(167, 40%, 24%);
+    font-weight: 900;
+}
+.word3{
+    font-family: Barlow2;
+    color: hsl(167, 40%, 24%);
+    font-size: 13px;
+    text-align: center;
+}
+.orange2{
+    background-color: orange;
+    height: 31rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.orange2Img{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+.photograph {
+    width: 350px;
+    height: 300px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: -150px;
+    align-items: center;
+    gap: 20px;
+}
+.photograph-head {
+    font-family: Fraunces;
+    color: hsl(198, 62%, 26%);
+    font-weight: 900;
+}
+.word4{
+    font-family: Barlow2;
+    color: hsl(198, 62%, 26%);
+    font-size: 13px;
+    text-align: center;
+}
+.client {
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 350px;
+}
+.water {
+    width: 95%;
+    height: 27rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.subclient {
+    width: 90%;
+    height: 32rem;
+}
+.subclient-head{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px 40px 20px;
+}
+.clienthead{
+    color: black;
+    color: hsl(210, 4%, 67%);
+    align-self: center;
+    font-family: Fraunces;
+    letter-spacing: 4px;
+    font-weight: 900;
+}
+.hold{
+    width: 95%;
+    height: 19rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+}
+.person1 {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.emily {
+    width: 60px;
+    height: 60px;
+    border-radius: 2rem;
+    align-self: center;
+}
+.contain1 {
+    font-size: 15px;
+    color: hsl(213, 9%, 39%);
+    font-family: Barlow2;
+    text-align: center;
+    font-weight: 570;
+}
+.desc1{
+    width: 300px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.emily-r{
+    font-family: Fraunces;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+}
+.position1 {
+    color: hsl(210, 4%, 67%);
+    font-family: Barlow2;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.person2 {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.thomas {
+    width: 60px;
+    height: 60px;
+    border-radius: 2rem;
+    align-self: center;
+}
+.contain2 {
+    font-size: 15px;
+    color: hsl(213, 9%, 39%);
+    font-family: Barlow2;
+    text-align: center;
+    font-weight: 570;
+}
+.desc2{
+    width: 300px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.thomas-s{
+    font-family: Fraunces;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+}
+.position2 {
+    color: hsl(210, 4%, 67%);
+    font-family: Barlow2;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.person3 {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.jennie {
+    width: 60px;
+    height: 60px;
+    border-radius: 2rem;
+    align-self: center;
+}
+.contain3 {
+    font-size: 15px;
+    color: hsl(213, 9%, 39%);
+    font-family: Barlow2;
+    text-align: center;
+    font-weight: 570;
+}
+.desc3{
+    width: 300px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.jennie-f{
+    font-family: Fraunces;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+}
+.position3 {
+    color: hsl(210, 4%, 67%);
+    font-family: Barlow2;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.pics{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: royalblue;
+}
+.yogurt{
+    width: 25%;
+    object-fit: cover;
+}
+.gallery-orange{
+    width: 25%;
+}
+.cone{
+    width: 25%;
+}
+.sugar{
+    width: 25%;
+}
+.sunnyside{
+    width: 100%;
+    height: 350px;
+    background-color: hsl(168, 34%, 41%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bottom {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sunny-head {
+    font-family: Barlow;
+    font-weight: 800;
+    color: hsl(167, 40%, 24%);
+}
+.links{
+    width: 300px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.end {
+    font-size: 15px;
+    color: hsl(167, 40%, 24%);
+    font-family: Barlow2;
+    font-weight: 500px;
+}
+.end:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.socials {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 30px;
+}
+.socials svg{
+    color: hsl(167, 40%, 24%);
+}
+.socials svg:hover{
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .body {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between !important;
+        align-items: center;
+    }
+    .navbar{
+        display: none !important;
+    }
+    .mobile-nav{
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 95%;
+        height: 70px;
+        background-color:rgb(48, 190, 255);
+        z-index: 3;
+        padding-top: 30px;
+    }
+    .name{
+        margin-left: 10px;
+    }
+    .menu {
+        display: inline;
+        width: 50px;
+        height: 50px;
+        margin-top: 7px;
+        margin-right: 20px;
+    }
+    #dropdown{
+        margin-top: 10px;
+        width: 300px;
+        height: 270px;
+        background-color: #fff;
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 3;
+        margin-inline: auto;
+        position: absolute;
+        margin-top: 100px;
+    }
+    .display{
+        font-family: Barlow2;
+        color: hsl(213, 9%, 39%);
+        font-size: 15px;
+    }
+    .contact2 {
+        padding: 12px 20px 12px 20px;
+        background-color: hsl(51, 100%, 49%);
+        border-radius: 25px;
+        font-weight: 700;
+        font-family: Fraunces;
+        font-size: 13px;
+    }
+    .head{
+        width: 100%;
+        background-color: rgb(48, 190, 255);
+        height: 520px;
+    }
+    .header {
+        text-align: center;
+        margin-top: -250px;
+        font-size: 30px;
+        position: absolute;
+    }
+    .arrow{
+        margin-top: -150px;
+        height: 110px;
+        position: absolute;
+    }
+    .orange{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .orangeImg{
+        width: 105%;
+        height: 472px;
+        object-fit: cover;
+        z-index: 1;
+        position: absolute;
+        top: 0px;
+        margin-top: -40px;
+        position: absolute;
+    }
+    .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .firstrow{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 624px;
+    }.transform2 {
+        width: 100%;
+        height: 312px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .egg2{
+        width: 100%;
+        height: 312px;
+        margin-top: 0px;
+    }
+    .transform {
+        width: 100%;
+        height: 312px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    .egg{
+        width: 100%;
+        height: 312px;
+        display: none;
+    }
+    .stand{
+        width: 100%;
+        height: 312px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .cherry{
+        width: 100%;
+        height: 312px;
+    }
+    .orange2{
+        width: 100%;
+        height: 312px;
+    }
+    .subclient-head{
+        width: 100%;
+    }
+    .client{
+        margin-top: 50px;
+    }
+    .clienthead {
+        width: 100%;
+        margin-top: -100px;
+    }
+    .hold{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+        width: 100%;
+    }
+    .person2{
+        margin-top: 50px;
+    }
+    .person3{
+        margin-top: 50px;
+    }
+    .pics{
+        margin-top: 350px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .yogurt{
+        object-fit: cover;
+        width: 100%;
+    }
+    .gallery-orange{
+        object-fit: cover;
+        width: 100%;
+    }
+    .cone{
+        object-fit: cover;
+        width: 100%;
+    }
+    .sugar{
+        object-fit: cover;
+        width: 100%;
+    }
+    .sunnyside{
+        margin-top: 65px;
+    }
+    .bottom{
+        margin-top: 100px;
+    }
+}
+.show{
+    display: flex !important;
+}
